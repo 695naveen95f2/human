@@ -1,6 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<stdlib.h>
+#include<bits/stdc++.h>
 using namespace std;
 class attend
 {
@@ -174,6 +175,9 @@ void attend::calculate()//calculate the percentage
 
 int main()
 {
+	// fast execution for large input 
+	ios_base::sync_with_stdio(NULL);
+	cin.tie(NULL);
         attend o1,o2,o3;
         int a,w;
         ifstream file1;
