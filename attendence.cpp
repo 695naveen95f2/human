@@ -19,7 +19,7 @@ int attend::enter()//update the attendance
         cin>>i;
         while(i)
         {
-        	cout<<"->Enter DATE/MONTH/YEAR: "<<endl;
+        	cout<<"->Enter DATE/MONTH/YEAR IN THIS FORMAT: "<<endl;
         	cin>>date>>month>>year;
         	cout<<endl;
                 if(month== 1||month==3||month==5||month==7||month==8||month==10||month==12)
@@ -27,11 +27,11 @@ int attend::enter()//update the attendance
                 		if(date>31||date==0)
                 		{
 							c=0;
-						}
-						else
-						{
+				}
+				else
+				{
 							 c=1;
-						}
+				}
                 }
                 if(month== 4||month==6||month==9||month==11)
                 {
@@ -81,7 +81,7 @@ int attend::enter()//update the attendance
                         	        t++;
                         	        z[k]=1;
                         	        cout<<"   ......................................................................"<<endl<<endl;
-                            	    cout<<"                         :::UPDATED AS PRESENT:::"<<endl<<endl;
+                            	    cout<<"                         :::Absenties of your class:::"<<endl<<endl;
                             	    cout<<"   ......................................................................"<<endl<<endl;
                         	}
                 			else
@@ -89,12 +89,12 @@ int attend::enter()//update the attendance
                         	        t++;
                         	        z[k]=0;
                         	        cout<<"   ......................................................................"<<endl<<endl;
-                        	        cout<<"                          :::UPDATED AS ABSENT:::"<<endl<<endl;
+                        	        cout<<"                          :::UPDATED THE ABSENTIES:::"<<endl<<endl;
                         	        cout<<"   ......................................................................"<<endl<<endl;
                         	}
                 		}
                 		cout<<endl;
-                		cout<<"                    ::::::ATTENDANCE OF THE DAY IS UPDATED AS:::::"<<endl;
+                		cout<<"                    ::::::UPDATE TODAYS ATTENDENCE:::::"<<endl;
                 		for(k=1;k<n+1;k++)
                 		{
                 			cout<<"__________";
@@ -176,8 +176,9 @@ void attend::calculate()//calculate the percentage
 int main()
 {
 	// fast execution for large input 
-	ios_base::sync_with_stdio(NULL);
+	ios_base::sync_with_stdio(nullptr);
 	cin.tie(NULL);
+	
         attend o1,o2,o3;
         int a,w;
         ifstream file1;
